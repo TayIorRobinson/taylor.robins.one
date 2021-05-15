@@ -1,0 +1,200 @@
+<html>
+
+<head>
+    <title>Taylor Robinson: The Character</title>
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/solid.css" integrity="sha384-6qO6EOFIDfvv6uzAzozX/BvMu/qkIIHxWYOVMjpVjX+NtPuNyd3YiOEflKIIV2ka" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/brands.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/fontawesome.css" integrity="sha384-Hx1dya9ptAdKu2hLNR5C2Cwgm+wCfwD0VMGE6jk5OUxxa9I58YfxOCwEtRog+3wk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h3 class="subheader">ORIGINAL CHARACTER PLS NO STEAL</b>
+            <h1 class="header brand">Taylor Robinson</h1>
+            <p class="stats">
+                <i class="fas fa-paw"></i> Red Fox
+                <i class="fas fa-venus-mars"></i> dumb
+                <i class="fas fa-globe-europe"></i> British
+                <i class="fas fa-ruler-vertical"></i> 5'6"
+                <i class="fas fa-weight"></i> 126lbs
+            </p>
+        </div>
+        <div id="seperator">
+            
+            <video src="img/sit/taysit.webm" height="266.24" loop autoplay muted id="sit"></video>
+        </div>
+        <div>
+            <div id="header">
+                <h3 class="subheader">I CANNOT DRAW SO I</b>
+                <h1 class="header">Commission Art</h1>
+            </div>
+            <div class="horizontalSlider" id="comms">
+                <img src="./img/important.png" height=250 class="art">
+                <img src="./img/important.png" height=250 class="art">
+                <img src="./img/important.png" height=250 class="art">
+                <img src="./img/important.png" height=250 class="art">
+                <img src="./img/important.png" height=250 class="art">
+                <img src="./img/important.png" height=250 class="art">
+                <img src="./img/important.png" height=250 class="art">
+                <img src="./img/important.png" height=250 class="art">
+                <img src="./img/important.png" height=250 class="art">
+                <img src="./img/important.png" height=250 class="art">
+            </div>
+        </div>
+        <div>
+            <div id="header">
+                <h3 class="subheader">I CAN USE THE MSPAINT FILLCAN TO "MAKE"</b>
+                <h1 class="header">Other Art</h1>
+            </div>
+            <div class="horizontalSlider" id="bases">
+                <img src="./img/important.png" height=250 class="art">
+                <img src="./img/important.png" height=250 class="art">
+                <img src="./img/important.png" height=250 class="art">
+                <img src="./img/important.png" height=250 class="art">
+                <img src="./img/important.png" height=250 class="art">
+                <img src="./img/important.png" height=250 class="art">
+                <img src="./img/important.png" height=250 class="art">
+                <img src="./img/important.png" height=250 class="art">
+                <img src="./img/important.png" height=250 class="art">
+                <img src="./img/important.png" height=250 class="art">
+            </div>
+        </div>
+    </div>
+    <div class="modalContainer">
+        <img class="modalImage" src="./img/important.png">
+        
+        <div id="modalText">
+            <h1>Art by Someone</h1>
+            <p>blahblahblahblahblahblahblahblahblahblah</p>
+            <a href="https://" class="fab fa-twitter"></a>
+        </div>
+    </div>
+    <script>
+        var arts = {
+            comms: {
+                "frickle-headshot": {
+                    file: "frickle.jpg",
+                    links: {
+                        "fab fa-twitter": "https://twitter.com/Frickle_/status/1393467033145155591",
+                        "fas fa-address-card": "https://fricklee.carrd.co/",
+                    },
+                    artist: "Frickle",
+                    description: "FOX!!!!!!!!!!! Big props to Frickle for this one!"
+                },
+                "salivuh-taxevasion": {
+                    file: "taxes.jpg",
+                    links: {
+                        "fab fa-twitter": "https://twitter.com/TayIorRobinson/status/1354261400819011586",
+                        "fa fa-address-card": "https://saiivuh.carrd.co/",
+                    },
+                    artist: "Salivuh",
+                    description: "[For legal reasons this is a joke. Please do not hurt me HMRC.]"
+                },
+                "tiredsaber-stickers": {
+                    file: "nobelfurtgpack.jpg",
+                    links: {
+                        "fab fa-twitter": "https://twitter.com/tired_saber",
+                        "fab fa-telegram-plane": "https://t.me/addstickers/tayiorrobinson"
+                    },
+                    artist: "Knives",
+                    description: "Ever wish you could express your emotions, but in fox form? With the Taylor Robinson Telegram Sticker Pack&trade;, now you can! (Gift art from <a target=_blank href='https://glacier.dog'>Noble</a>)"
+
+                },
+                "limos-bust": {
+                    file: "limos.png",
+                    links: {
+                        "fab fa-reddit-alien": "https://www.reddit.com/r/furry/comments/k7wziz/a_commission/",
+                        "fab fa-deviantart": "https://www.deviantart.com/limosnesia/art/A-commission-863296434",
+                    },
+                    artist: "Nesia Limos",
+                    description: "The first ever Taylor commission! Big fan of Limos' art style!"
+                },
+            },
+            bases: {
+                "ref": {
+                    file: "tay_ref_v2.png",
+                    links: {
+                        "fab fa-twitter": "https://twitter.com/artbyzhivago",
+                        "fas fa-globe": "https://cat-bird.com/"
+                    },
+                    artist: "Zhivago",
+                    description: "Taylor Robinson: A reference guide (2<sup>nd</sup> Edition)"
+                },
+                "3d": {
+                    file: "3d.png",
+                    links: {
+                        "fab fa-twitter": "https://twitter.com/juliawinterpaw",
+                        "fas fa-store-alt": "https://gumroad.com/juliawinterpaw#CgZVG"
+                    },
+                    artist: "Julia Winterpaw",
+                    description: "With new 3-D Rendering Technology, You can see Taylor on YOUR screen in 3-Dimensions!"
+
+                },
+                "important": {
+                    file: "important.png",
+                    links: {
+                        "fab fa-twitter": "https://twitter.com/TinyMochaDeer/status/1267230512944480258",
+                        "fab fa-google-drive": "https://drive.google.com/drive/u/4/folders/10pTjpeVJ9QSdGPTxyo0fYZ3sp8i1TQOo?usp=sharing"
+                    },
+                    artist: "TinyMochaDeer",
+                    description: "For your consideration: Fox."
+
+                }
+            }
+        }
+        function createImage(artId) {
+            var art = arts.comms[artId] || arts.bases[artId]
+            return `
+                <a href="#${artId}" class=art>
+                    <img class='artimg' src="./img/small/${art.file}" alt="${art.description.replace('"',"")}" height=250>
+                </a>
+            `
+        }
+
+        var commsHtml = document.querySelector("#comms")
+        commsHtml.innerHTML = "";
+
+        for (var comm in arts.comms) {
+            commsHtml.innerHTML += createImage(comm)
+        }
+
+        var baseHtml = document.querySelector("#bases")
+        baseHtml.innerHTML = "";
+
+        for (var comm in arts.bases) {
+            baseHtml.innerHTML += createImage(comm)
+        }
+        baseHtml.innerHTML += `<a href="https://drive.google.com/drive/folders/1cOexPtXth49HGUWjXBb7OPqnQSotsCTO?usp=sharing" class="art" style="vertical-align: top;">
+                    <span class="artimg" style="width:250;height:250;vertical-align: middle;text-align: center;align-items: center;justify-content: center;display: inline-flex;"><i class="fas fa-angle-right" style="font-size: 300%;"></i></span>
+                </a>`
+
+        function hashChange() {
+            var hash = location.hash.replace("#","")
+            var art = arts.comms[hash] || arts.bases[hash]
+            if (!art) return document.querySelector(".modalContainer").classList.remove("modalOpen");
+            var h = `<img class="modalImage" src="./img/${art.file}">
+        
+        <div id="modalText">
+            <h2>${arts.comms[hash] ? "Art" : "Base"} by ${art.artist}</h1>
+            <p>${art.description}<br>
+            `
+            for (var l in art.links) {
+                h += `<a href="${art.links[l]}" target="_blank" class="${l}"></a>`
+            }
+            document.querySelector(".modalContainer").innerHTML = h += `</p></div>`
+            document.querySelector(".modalContainer").classList.add("modalOpen")
+        }
+        document.querySelector(".modalContainer").onclick = function() {location.hash = ""}
+        hashChange()
+        window.onhashchange = hashChange
+        setInterval(function() {
+            try {
+                document.querySelector("html > div").remove()
+            } catch(e) {}
+        },100)
+    </script>
+</body>
+
+</html>

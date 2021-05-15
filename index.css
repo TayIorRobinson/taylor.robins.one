@@ -1,0 +1,134 @@
+@import url(font/stylesheet.css);
+
+body {
+    background:#222;
+    color: #c9c9c9;
+    font-size: 30px;
+    padding:25px;
+    font-family: "Brandon Grotesque", sans-serif;
+    line-height:1.5em;
+    overflow-x: hidden;
+}
+body * {
+    font-weight: 500;
+}
+#header * {
+    margin: 7px;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.links > a, .links > i {
+    vertical-align: text-bottom;
+    margin:0;
+}
+svg[data-icon="envelope"] { vertical-align: bottom;}
+
+
+.brand {
+    color: #C11562;
+    background: -webkit-linear-gradient(#EC1628, #C11562);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 67px;
+    padding-top: 5px;
+    margin-top: -5px;
+    padding-bottom: 20px;
+}
+h3 {
+    font-size: 25px;
+    font-weight: 600;
+    opacity: 0.65;
+}
+.stats {
+    margin-top: -5px;
+    font-size: 40px;
+    font-size: 39px;
+}
+
+#seperator {
+    margin-left: -22.5px;
+    width: calc(100vw - 37.5px);
+    height: 13px;
+    border-radius: 12.5px;
+    background-color: #c9c9c9;
+}
+#sit {
+    position: absolute;
+    margin-top: -175px;
+    right: 20px;
+    z-index: 2;
+    transform-origin: 0px 183px;
+    transition: 0.1s transform;
+}
+@media only screen and (max-width: 1024px) {
+    #sit { display: none;}
+}
+
+.horizontalSlider {
+    height: 270px;
+    max-width: calc(100vw + 120px);
+    min-width: calc(100vw + 120px);
+    margin-left: -60px;
+    padding-left: 60px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.art:last-child {
+    margin-right: 180px;
+}
+.artimg {
+    background-color: #313131;
+    border-radius: 12px;
+}
+.art {
+    transition: 0.25s filter, 0.25s transform;
+}
+.art:hover {
+    transform:scale(1.2);
+    filter:brightness(120%);
+}
+.modalContainer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    transition: 0.5s transform, 0.5s opacity;
+    opacity: 0;
+    transform: scale(5);
+    pointer-events: none;
+}
+.modalImage {
+    object-fit: contain;
+    flex-shrink: 3;
+    min-height: 0px;
+}
+#modalText {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.modalOpen {
+    transform: none;
+    opacity: 1;
+    pointer-events: initial;
+}
+#modalText h2 {
+    margin-top: 10px;
+    margin-bottom: -30px;
+}
+#modalText a {
+    margin-left: 20px;
+}
